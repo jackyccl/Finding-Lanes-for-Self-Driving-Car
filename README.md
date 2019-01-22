@@ -6,13 +6,16 @@ This project was based on "The Complete Self-Driving Car Course - Applied Deep L
 Below are the highlighted steps for the procedure:
 
 # Step 1
-import image and convert to an array
+Import image and convert to an array
 
 # Step 2
-canny edge detection - identyfying sharp changes in intensity in adjacent pixels
-notes : image can be read as matrix or an array of pixels
-0 - min intensity 255 - max intensity
-change pic to gray scale
+Canny edge detection - identyfying sharp changes in intensity in adjacent pixels.
+
+Notes : image can be read as matrix or an array of pixels.
+
+0 - min intensity 255 - max intensity.
+
+Change pic to gray scale.
 
 # Step 3
 Gaussian Blur - reduce image noise
