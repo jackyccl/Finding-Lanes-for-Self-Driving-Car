@@ -1,37 +1,37 @@
-# Finding-Lanes-for-Self-Driving-Car
+# Finding Lanes for Self Driving Car
 This is a self-learning hands-on project related to find guiding lanes for a self-driving car.  
 
 This project was based on "The Complete Self-Driving Car Course - Applied Deep Learning & Computer Vision" on youtube and credited to Rayan Slim. 
 
 Below are the highlighted steps for the procedure:
 
-# step 1
+# Step 1
 import image and convert to an array
 
-# step 2
+# Step 2
 canny edge detection - identyfying sharp changes in intensity in adjacent pixels
 notes : image can be read as matrix or an array of pixels
 0 - min intensity 255 - max intensity
 change pic to gray scale
 
-step 3
+# Step 3
 Gaussian Blur - reduce image noise
 averaging out the pixels with a kernel
 kernel - sets each pixel values equal to weighted average of its neighbouring pixels
 
-step 4
+# Step 4
 apply canny edge detection
 by computing the derivative in all directions of the image, we are computing the gradients
 since the gradient is the change in birghtness over a series of pixels
 lower than threshold, reject, higher than threhold indicate as an edge, between lower and upper threshold - treated as edge only if it is connected to a strong edge
 lower threshold : higher threshold normally use 1:2 or 1:3 ratio
 
-step 5
+# Step 5
 finding the area of interest  video at 22.54
 use matplotlib to first see the coordinate of area of interest
 
 
-step 6 taking bitwise end!
+# Step 6 taking bitwise end!
 apply the black mask to the canny image
 we use bitwise '&' operation between two images
 since both images have the same array shape and therefore
@@ -39,8 +39,7 @@ the same dimension and the same amount of pixels
 0000 & 0101 will always be 0000
 1111 & 0101 will be  0101 same as the input - binary numbers video at 30.41
 
-step 7 Hough Transform
-
+# Step 7 Hough Transform
 theory - first draw the 2d corrdinate space of x and y and inside it is a straight line
 y = mx + b
 in hough space, the x axis is m and y axis is b
@@ -68,8 +67,7 @@ rho = x cos theta + y sin theta
 now the x axis in hough space is theta (radians) and y axis is rho (p)
 and it is sinusoidal. 
 
-step 8 Hough Transform 2 - Implementation
-
+# Step 8 Hough Transform 2 - Implementation
 *Hough accumulator array is previously described as a grid for simplicity
 and it is actually a two dimensional array of rows and columns to use to collect votes
  video at 52.15
@@ -94,7 +92,7 @@ addWeighted() - take the sum of our color image with our line image
 			 	intensities of ori image would just stay the same
 
 
-step 9 - Optimization finding lane lines
+# Step 9 - Optimization finding lane lines
 instead of having multiple lines, we can average their slope and y-intercept
 into a single line that traces out both of lanes
 
@@ -111,6 +109,6 @@ why 3/5 because we just goes three-fifths of the way upwards from bottom of scre
 
 Rmb to change the function display_lines as "lines" is now 2d array
 
-step 10- finding lanes in videos
+# Step 10- finding lanes in videos
 
 
