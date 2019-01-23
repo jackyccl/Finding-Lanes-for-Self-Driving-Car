@@ -1,8 +1,6 @@
 # Finding Lanes for Self Driving Car
 This is a self-learning hands-on project related to find guiding lanes for a self-driving car.  
 
-This project was based on "The Complete Self-Driving Car Course - Applied Deep Learning & Computer Vision" on youtube and credited to Rayan Slim. 
-
 <p align="center"> 
 <img src="https://user-images.githubusercontent.com/46767764/51599117-dc3b9500-1f39-11e9-814d-99247e28bb5e.gif">
 </p>
@@ -108,4 +106,6 @@ Rmb to change the function display_lines as "lines" is now 2d array
 
 # Step 10- Finding lanes in videos
 
+
+This project was based on "The Complete Self-Driving Car Course - Applied Deep Learning & Computer Vision" on youtube and credited to Rayan Slim. 
 
