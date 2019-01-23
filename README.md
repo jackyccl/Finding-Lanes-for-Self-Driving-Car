@@ -107,5 +107,5 @@ Rmb to change the function display_lines as "lines" is now 2d array
 # Step 10- Finding lanes in videos
 
 
-### Thank you and this project was based on "The Complete Self-Driving Car Course - Applied Deep Learning & Computer Vision" on youtube and credited to Rayan Slim. 
+#### Thank you and this project was based on "The Complete Self-Driving Car Course - Applied Deep Learning & Computer Vision" on youtube and credited to Rayan Slim. 
 
